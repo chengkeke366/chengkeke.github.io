@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
-title:"C++与音视频"
-description:""
+title:C++与音视频
+description:
 site.logo:false
 show_downloads: false
 is_user_page:false
