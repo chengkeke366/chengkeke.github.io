@@ -12,11 +12,11 @@ C++ 进阶分5个部分讲解：
 
 这部分是为了给后续对比STL时做基础：用自己轮子的代码与gcc stl及msvc stl库进行对比，思考STL这么写的原因。提升自己coding能力。
 
-* [引用计数器](.\1. C++\4. 造轮子\1. 引用计数器.md)
-* [shared_ptr](.\1. C++\4. 造轮子\2. shared_ptr.md)
-* [weak_ptr](.\1. C++\4. 造轮子\3. weak_ptr.md)
-* [unique_ptr](.\1. C++\4. 造轮子\4. unique_ptr.md)
-* [消息循环](.\1. C++\4. 造轮子\5. 消息循环.md)
+* [引用计数器](.\1. C++\1. 造轮子\1. 引用计数器.md)
+* [shared_ptr](.\1. C++\1. 造轮子\2. shared_ptr.md)
+* [weak_ptr](.\1. C++\1. 造轮子\3. weak_ptr.md)
+* [unique_ptr](.\1. C++\1. 造轮子\4. unique_ptr.md)
+* [消息循环](.\1. C++\1. 造轮子\5. 消息循环.md)
 
 ## 1.2. C++ 泛型---template
 
