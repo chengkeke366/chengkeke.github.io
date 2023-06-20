@@ -1,5 +1,19 @@
 思路：分别通过`x264_param_apply_profile`和`x264_param_default_preset` 来测试不同profile与preset下编码耗时与编码出来h264码流大小的实验代码。
 
+profile、preset、tune定义如下：
+
+```c++
+const x264_profile_names[] = { "baseline", "main", "high", "high10", "high422", "high444", 0 };
+
+x264_preset_names[] = { "ultrafast", "superfast", "veryfast", "faster", "fast", "medium", "slow", "slower", "veryslow", "placebo", 0 };
+
+x264_tune_names[] = { "film", "animation", "grain", "stillimage", "psnr", "ssim", "fastdecode", "zerolatency", 0 };
+```
+
+
+
+
+
 ```c++
   int ret;
   int y_size;
@@ -15,9 +29,7 @@
   x264_param_default(pParam);
 
   std::ofstream output_file;
-	//const x264_profile_names[] = { "baseline", "main", "high", "high10", "high422", "high444", 0 };
- //x264_preset_names[] = { "ultrafast", "superfast", "veryfast", "faster", "fast", "medium", "slow", "slower", "veryslow", "placebo", 0 };
- //x264_tune_names[] = { "film", "animation", "grain", "stillimage", "psnr", "ssim", "fastdecode", "zerolatency", 0 };
+
   for (int i=0; i<6;i++){//6
 		for (int j = 0; j < 10; j++) {//10
 			for (int k=0; k<8; k++){//8
